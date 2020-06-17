@@ -54,18 +54,17 @@ header nav label {
   position: absolute;
   right: 19px;
   top: 16px;
+  height: 20px;
 }
 
 header nav label div {
   position: relative;
-  background: black;
+  background-color: black;
   width: 18px;
   height: 2px;
   margin: 0;
-  -webkit-transition: top 0.2s, -webkit-transform 0.2s;
-  transition: top 0.2s, -webkit-transform 0.2s;
-  transition: top 0.2s, transform 0.2s;
-  transition: top 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header nav label #top {
@@ -95,14 +94,14 @@ header nav ul {
 }
 
 header nav ul li {
-  text-align: center;
   list-style: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
-  color: #060A24;
+  color: #FFFFFF;
   letter-spacing: 0;
   line-height: 28px;
-  padding: 0 24px;
+  padding: 14px 24px;
+  background-color: #0000EC;
 }
 
 * {
@@ -110,5 +109,40 @@ header nav ul li {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (min-width: 755px) {
+  header {
+    height: 80px;
+  }
+  header img {
+    margin: 22px 0 22px 100px;
+    width: 36px;
+    height: 36px;
+  }
+  header nav {
+    width: unset;
+  }
+  header nav input {
+    display: none;
+  }
+  header nav label {
+    display: none;
+  }
+  header nav ul {
+    position: relative;
+    top: 0;
+    display: inline !important;
+  }
+  header nav ul li {
+    display: inline-block;
+    color: #060A24;
+    background-color: unset;
+    padding: 26px 24px;
+    text-align: center;
+  }
+  header nav ul li:last-child {
+    padding-right: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

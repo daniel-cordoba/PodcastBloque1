@@ -35,13 +35,14 @@ header {
             position: absolute;
             right: 19px;
             top: 16px;
+            height: 20px;
             div {
                 position: relative;
-                background: black;
+                background-color: black;
                 width: 18px;
                 height: 2px;
                 margin: 0;
-                transition: top 0.2s, transform 0.2s;
+                transition: 0.2s;
             }
             #top {
                 top: 0px;
@@ -62,14 +63,14 @@ header {
             flex-direction: column;
             width: 100%;
             li {
-                text-align: center;
                 list-style: none;
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 16px;
-                color: #060A24;
+                color: #FFFFFF;
                 letter-spacing: 0;
                 line-height: 28px;
-                padding: 0 24px;
+                padding: 14px 24px;
+                background-color: #0000EC;
             }
         }
     }

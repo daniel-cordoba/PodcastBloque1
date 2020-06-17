@@ -1,0 +1,37 @@
+@media screen and (min-width: 755px) {
+    //HEADER
+    header {
+        height: 80px;
+        img {
+            margin: 22px 0 22px 100px;
+            width: 36px;
+            height: 36px;
+        }
+        nav {
+            width: unset;
+            input {
+                display: none;
+            }
+            label {
+                display: none;
+            }
+            //Lista Elementos Hamburguesa
+            ul {
+                position: relative;
+                top: 0;
+                display: inline !important;
+                li {
+                    display: inline-block;
+                    color: #060A24;
+                    background-color: unset;
+                    // margin: 26px 0;
+                    padding: 26px 24px;
+                    text-align: center;
+                    &:last-child {
+                        padding-right: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
