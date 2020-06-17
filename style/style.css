@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +19,83 @@ header img {
   margin: 10px 0 10px 16px;
 }
 
+header nav {
+  width: 100%;
+}
+
+header nav input {
+  display: none;
+}
+
+header nav input:checked + label + ul {
+  display: none;
+}
+
+header nav input:not(:checked) + label div {
+  background-color: #636363;
+}
+
+header nav input:not(:checked) + label #top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 7px;
+}
+
+header nav input:not(:checked) + label #middle {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header nav input:not(:checked) + label #bottom {
+  display: none;
+}
+
+header nav label {
+  position: absolute;
+  right: 19px;
+  top: 16px;
+}
+
+header nav label div {
+  position: relative;
+  background: black;
+  width: 18px;
+  height: 2px;
+  margin: 0;
+  -webkit-transition: top 0.2s, -webkit-transform 0.2s;
+  transition: top 0.2s, -webkit-transform 0.2s;
+  transition: top 0.2s, transform 0.2s;
+  transition: top 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+header nav label #top {
+  top: 0px;
+}
+
+header nav label #middle {
+  top: 5px;
+}
+
+header nav label #bottom {
+  top: 10px;
+}
+
+header nav ul {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 header nav ul li {
+  text-align: center;
   list-style: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
@@ -34,5 +103,12 @@ header nav ul li {
   letter-spacing: 0;
   line-height: 28px;
   padding: 0 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 44px;
+    img {
+        width: 24px;
+        height: 24px;
+        margin: 10px 0 10px 16px;
+    }
+    nav {
+        width: 100%;
+        //Animacion Menu Hamburguesa
+        input {
+            display: none;
+            &:checked+label+ul {
+                display: none;
+            }
+            &:not(:checked)+label div {
+                background-color: rgb(99, 99, 99);
+            }
+            &:not(:checked)+label #top {
+                transform: rotate(-45deg);
+                top: 7px;
+            }
+            &:not(:checked)+label #middle {
+                transform: rotate(45deg);
+            }
+            &:not(:checked)+label #bottom {
+                display: none;
+            }
+        }
+        label {
+            position: absolute;
+            right: 19px;
+            top: 16px;
+            div {
+                position: relative;
+                background: black;
+                width: 18px;
+                height: 2px;
+                margin: 0;
+                transition: top 0.2s, transform 0.2s;
+            }
+            #top {
+                top: 0px;
+            }
+            #middle {
+                top: 5px;
+            }
+            #bottom {
+                top: 10px;
+            }
+        }
+        //Lista Elementos Hamburguesa
+        ul {
+            position: absolute;
+            top: 44px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            li {
+                text-align: center;
+                list-style: none;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 28px;
+                padding: 0 24px;
+            }
+        }
+    }
+}
