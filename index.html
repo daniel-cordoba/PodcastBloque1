@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- BARRA NAV -->
     <header>
         <img src="images/logo.svg" alt="">
 
@@ -20,14 +21,48 @@
                 <div id="bottom"></div>
             </label>
             <ul>
-                <li>EPISODIOS</li>
-                <li>NOSOTROS</li>
-                <li>ENTREVISTAS</li>
-                <li>TÓPICOS</li>
+                <li><a href="#">EPISODIOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">ENTREVISTAS</a></li>
+                <li><a href="#">TÓPICOS</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <!-- TITULO -->
+        <section class="titulo">
+            <h1>Hello </h1>
+            <h1 class="txt-underlined">world</h1>
+            <h1 class="after-underlined">pale blue dot</h1>
+            <h1 class="dot">.</h1>
+            <p class="p-cel">Un podcast que explora el mundo de la programación. Nuevos episodios todos los jueves cada 15 días.</p>
+            <p class="p-pc">El portal de podcast que explora el mundo de la proframación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <button>CONOCÉ MÁS</button>
+        </section>
 
+        <!-- EPISODIOS -->
+        <section class="episodios">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon class="svg-cel" fill="white" points="0,4 0,0 100,0"/>
+                <polygon class="svg-pc" fill="white" points="0,10 0,0 100,0"/>
+                
+                <polygon class="svg-cel" fill="white" points="0,100 100,96 100,100"/>
+                <polygon class="svg-pc" fill="white" points="0,100 100,86 100,100"/>
+            </svg>
+
+            <h1>Episodios</h1>
+
+            <div class="container-iframe">
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/4TVf9ldzZpa4LKTQecAqCy" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            </div>
+
+
+        </section>
+
+    </main>
 
 </body>
 

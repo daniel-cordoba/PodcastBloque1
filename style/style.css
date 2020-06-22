@@ -97,11 +97,15 @@ header nav ul li {
   list-style: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
-  color: #FFFFFF;
   letter-spacing: 0;
   line-height: 28px;
   padding: 14px 24px;
   background-color: #0000EC;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 * {
@@ -111,7 +115,114 @@ header nav ul li {
           box-sizing: border-box;
 }
 
-@media screen and (min-width: 755px) {
+main .titulo {
+  margin-top: 29px;
+}
+
+main .titulo h1 {
+  display: inline;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+  margin-left: 5%;
+}
+
+main .titulo .txt-underlined {
+  margin: unset;
+  text-decoration: line-through;
+  padding-right: 35%;
+}
+
+main .titulo .after-underlined {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+main .titulo .dot {
+  margin-left: 0;
+}
+
+main .titulo p {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  line-height: 22px;
+  margin: 5px 5% 36px 5%;
+}
+
+main .titulo .p-pc {
+  position: relative;
+  display: none;
+}
+
+main .titulo button {
+  margin: 0 5% 26px 5%;
+  justify-items: center;
+  width: 288px;
+  height: 48px;
+  background: #00F3BB;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  line-height: 22px;
+  font-weight: 500;
+  border: unset;
+}
+
+main .titulo button:hover {
+  color: #fff;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+main .episodios svg {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  position: absolute;
+  top: 347px;
+  width: 100%;
+  height: 1203.5px;
+  z-index: -10;
+}
+
+main .episodios svg .svg-pc {
+  display: none;
+}
+
+main .episodios h1 {
+  position: relative;
+  top: 64px;
+  left: 5%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 42px;
+}
+
+main .episodios .container-iframe {
+  position: relative;
+  top: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .episodios .container-iframe div {
+  margin-bottom: 11px;
+  height: 235px;
+  /*border-radius: 5%;
+                overflow: hidden;*/
+}
+
+@media screen and (min-width: 780px) {
   header {
     height: 80px;
   }
@@ -135,14 +246,86 @@ header nav ul li {
     display: inline !important;
   }
   header nav ul li {
+    font-weight: 500;
     display: inline-block;
-    color: #060A24;
     background-color: unset;
     padding: 26px 24px;
     text-align: center;
   }
   header nav ul li:last-child {
     padding-right: 100px;
+  }
+  header nav ul li a {
+    color: #060A24;
+  }
+  header nav ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header nav ul li a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+  }
+  main .titulo {
+    margin-top: 120px;
+  }
+  main .titulo h1 {
+    font-size: 64px;
+  }
+  main .titulo .txt-underlined {
+    padding: 0;
+  }
+  main .titulo .after-underlined {
+    margin-left: 7px;
+  }
+  main .titulo .dot {
+    color: #0000EC;
+  }
+  main .titulo p {
+    font-size: 16px;
+    width: 628px;
+    margin-bottom: 56px;
+  }
+  main .titulo .p-cel {
+    display: none;
+  }
+  main .titulo .p-pc {
+    display: block;
+    text-align: justify;
+  }
+  main .titulo button {
+    margin-bottom: 5px;
+  }
+  main .episodios h1 {
+    top: 186px;
+    font-size: 48px;
+  }
+  main .episodios svg {
+    top: 449px;
+    height: 1042.6px;
+  }
+  main .episodios svg .svg-pc {
+    display: unset;
+  }
+  main .episodios svg .svg-cel {
+    display: none;
+  }
+  main .episodios .container-iframe {
+    width: 90%;
+    margin: 0 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 274px;
+  }
+  main .episodios .container-iframe div {
+    width: 584px;
+    height: 232px;
+    margin-bottom: 72px;
   }
 }
 /*# sourceMappingURL=style.css.map */

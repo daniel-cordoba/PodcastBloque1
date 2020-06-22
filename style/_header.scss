@@ -66,11 +66,14 @@ header {
                 list-style: none;
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 16px;
-                color: #FFFFFF;
                 letter-spacing: 0;
                 line-height: 28px;
                 padding: 14px 24px;
                 background-color: #0000EC;
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
             }
         }
     }
