@@ -60,6 +60,7 @@ main {
     }
     //SECCION EPISODIOS
     .episodios {
+        height: 1203.5px;
         svg {
             background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
             position: absolute;
@@ -71,7 +72,7 @@ main {
                 display: none;
             }
         }
-        h1 {
+        h2 {
             position: relative;
             top: 64px;
             left: 5%;
@@ -92,6 +93,44 @@ main {
                 height: 235px;
                 /*border-radius: 5%;
                 overflow: hidden;*/
+            }
+        }
+    }
+    //SECCION DE DONDE VENIMOS
+    .de-donde-venimos {
+        position: relative;
+        /*display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 42px 42px 1fr;
+        justify-content: center;*/
+        display: flex;
+        flex-direction: column;
+        transform: translatey(-60px);
+        img {
+            //grid-row: 1 / 2;
+            height: 519px;
+            width: 100%;
+        }
+        article {
+            padding-top: 27px;
+            h2 {
+                //grid-row: 2 / 3;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 36px;
+                color: #060A24;
+                line-height: 42px;
+                padding-left: 5%;
+            }
+            /*.venimos {
+            grid-row: 3 / 4;
+            }*/
+            p {
+                //grid-row: 4 / 5;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 14px;
+                color: #060A24;
+                line-height: 22px;
+                padding: 8px 5% 0;
             }
         }
     }

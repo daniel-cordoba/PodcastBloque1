@@ -79,7 +79,7 @@
         }
         //SECCION EPISODIOS
         .episodios {
-            h1 {
+            h2 {
                 top: 186px;
                 font-size: 48px;
             }
@@ -103,6 +103,31 @@
                     width: 584px;
                     height: 232px;
                     margin-bottom: 72px;
+                }
+            }
+        }
+        //SECCION DE DONDE VENIMOS
+        .de-donde-venimos {
+            flex-direction: row;
+            transform: translatey(-300px);
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 457.6px;
+                height: 660px;
+            }
+            article {
+                height: 290px;
+                width: 464px;
+                padding: 0;
+                h2 {
+                    display: inline;
+                }
+                .venimos {
+                    padding: 0;
+                }
+                p {
+                    padding-top: 24px;
                 }
             }
         }
