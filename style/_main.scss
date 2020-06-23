@@ -11,6 +11,7 @@ main {
         h1 {
             display: inline;
             font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
             font-size: 36px;
             color: #060A24;
             line-height: 42px;
@@ -77,7 +78,7 @@ main {
             top: 64px;
             left: 5%;
             font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 36px;
             color: #ffffff;
             line-height: 42px;
@@ -99,38 +100,89 @@ main {
     //SECCION DE DONDE VENIMOS
     .de-donde-venimos {
         position: relative;
-        /*display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 42px 42px 1fr;
-        justify-content: center;*/
         display: flex;
         flex-direction: column;
         transform: translatey(-60px);
         img {
-            //grid-row: 1 / 2;
             height: 519px;
             width: 100%;
         }
         article {
             padding-top: 27px;
             h2 {
-                //grid-row: 2 / 3;
                 font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 400;
                 font-size: 36px;
                 color: #060A24;
                 line-height: 42px;
-                padding-left: 5%;
+                padding: 0 5%;
             }
-            /*.venimos {
-            grid-row: 3 / 4;
-            }*/
             p {
-                //grid-row: 4 / 5;
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 14px;
                 color: #060A24;
                 line-height: 22px;
                 padding: 8px 5% 0;
+            }
+        }
+    }
+    //SECCION INVITADOS ESTELARES
+    .invitados {
+        h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            color: #060A24;
+            line-height: 42px;
+            padding: 0 5%;
+        }
+        div {
+            position: relative;
+            top: 14px;
+            display: grid;
+            grid-template-rows: repeat(6, 76vw);
+            grid-template-columns: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    //SECCION ALGUNOS DE NUESTROS TEMAS
+    .algunos {
+        position: relative;
+        top: 50px;
+        h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            color: #060A24;
+            line-height: 42px;
+            padding: 0 5%;
+        }
+        .svg-container {
+            height: 844px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 104px;
+                    height: 104px;
+                }
+                p {
+                    padding-top: 13px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #060A24;
+                    text-align: center;
+                }
             }
         }
     }

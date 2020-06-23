@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
@@ -122,6 +123,7 @@ main .titulo {
 main .titulo h1 {
   display: inline;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
   font-size: 36px;
   color: #060A24;
   line-height: 42px;
@@ -198,7 +200,7 @@ main .episodios h2 {
   top: 64px;
   left: 5%;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 36px;
   color: #ffffff;
   line-height: 42px;
@@ -228,10 +230,6 @@ main .episodios .container-iframe div {
 
 main .de-donde-venimos {
   position: relative;
-  /*display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 42px 42px 1fr;
-        justify-content: center;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,17 +248,15 @@ main .de-donde-venimos img {
 
 main .de-donde-venimos article {
   padding-top: 27px;
-  /*.venimos {
-            grid-row: 3 / 4;
-            }*/
 }
 
 main .de-donde-venimos article h2 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
   font-size: 36px;
   color: #060A24;
   line-height: 42px;
-  padding-left: 5%;
+  padding: 0 5%;
 }
 
 main .de-donde-venimos article p {
@@ -269,6 +265,89 @@ main .de-donde-venimos article p {
   color: #060A24;
   line-height: 22px;
   padding: 8px 5% 0;
+}
+
+main .invitados h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+  padding: 0 5%;
+}
+
+main .invitados div {
+  position: relative;
+  top: 14px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (76vw)[6];
+      grid-template-rows: repeat(6, 76vw);
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+main .invitados div img {
+  height: 100%;
+  width: 100%;
+}
+
+main .algunos {
+  position: relative;
+  top: 50px;
+}
+
+main .algunos h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+  padding: 0 5%;
+}
+
+main .algunos .svg-container {
+  height: 844px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .algunos .svg-container div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .algunos .svg-container div img {
+  width: 104px;
+  height: 104px;
+}
+
+main .algunos .svg-container div p {
+  padding-top: 13px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #060A24;
+  text-align: center;
 }
 
 @media screen and (min-width: 780px) {
@@ -341,6 +420,7 @@ main .de-donde-venimos article p {
   main .titulo .p-pc {
     display: block;
     text-align: justify;
+    margin-left: 5%;
   }
   main .titulo button {
     margin-bottom: 5px;
@@ -391,6 +471,7 @@ main .de-donde-venimos article p {
             align-items: center;
   }
   main .de-donde-venimos img {
+    padding-right: 24px;
     width: 457.6px;
     height: 660px;
   }
@@ -407,6 +488,42 @@ main .de-donde-venimos article p {
   }
   main .de-donde-venimos article p {
     padding-top: 24px;
+  }
+  main .invitados {
+    -webkit-transform: translatey(-236px);
+            transform: translatey(-236px);
+  }
+  main .invitados h2 {
+    padding-left: 14%;
+    font-size: 48px;
+  }
+  main .invitados div {
+    position: relative;
+    top: 36px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (25.3vw)[2];
+        grid-template-rows: repeat(2, 25.3vw);
+  }
+  main .algunos {
+    position: relative;
+    top: -150px;
+  }
+  main .algunos h2 {
+    padding-left: 14%;
+    font-size: 48px;
+  }
+  main .algunos .svg-container {
+    margin-top: 56px;
+    margin-left: 14%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: unset;
+  }
+  main .algunos .svg-container div {
+    width: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */
