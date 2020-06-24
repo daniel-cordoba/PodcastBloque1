@@ -102,11 +102,6 @@
                 flex-flow: row wrap;
                 justify-content: space-between;
                 top: 274px;
-                div {
-                    width: 584px;
-                    height: 232px;
-                    margin-bottom: 72px;
-                }
             }
         }
         //SECCION DE DONDE VENIMOS
@@ -115,6 +110,10 @@
             transform: translatey(-300px);
             justify-content: center;
             align-items: center;
+            a {
+                position: relative;
+                top: -300px;
+            }
             img {
                 padding-right: 24px;
                 width: 457.6px;
@@ -211,6 +210,24 @@
             width: 314px;
             i {
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1315px) {
+    //SECCION EPISODIOS
+    .episodios {
+        .container-iframe {
+            width: 90%;
+            margin: 0 5%;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            top: 274px;
+            div {
+                width: 584px;
+                height: 232px;
+                margin-bottom: 72px;
             }
         }
     }

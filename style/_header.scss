@@ -17,7 +17,7 @@ header {
             &:checked+label+ul {
                 display: none;
             }
-            &:not(:checked)+label div {
+            &:not(:checked)+label span {
                 background-color: rgb(99, 99, 99);
             }
             &:not(:checked)+label #top {
@@ -36,7 +36,8 @@ header {
             right: 19px;
             top: 16px;
             height: 20px;
-            div {
+            span {
+                display: block;
                 position: relative;
                 background-color: black;
                 width: 18px;

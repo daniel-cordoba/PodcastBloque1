@@ -32,7 +32,7 @@ header nav input:checked + label + ul {
   display: none;
 }
 
-header nav input:not(:checked) + label div {
+header nav input:not(:checked) + label span {
   background-color: #636363;
 }
 
@@ -58,7 +58,8 @@ header nav label {
   height: 20px;
 }
 
-header nav label div {
+header nav label span {
+  display: block;
   position: relative;
   background-color: black;
   width: 18px;
@@ -171,6 +172,7 @@ main .titulo button {
   line-height: 22px;
   font-weight: 500;
   border: unset;
+  cursor: pointer;
 }
 
 main .titulo button:hover {
@@ -224,6 +226,12 @@ main .episodios .container-iframe {
 main .episodios .container-iframe div {
   margin-bottom: 11px;
   height: 235px;
+}
+
+main .episodios .container-iframe div iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 main .de-donde-venimos {
@@ -392,6 +400,7 @@ main .ultimas-novedades button {
   line-height: 22px;
   font-weight: 500;
   border: unset;
+  cursor: pointer;
 }
 
 main .ultimas-novedades button:hover {
@@ -423,6 +432,10 @@ footer .awesome-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 14%;
+}
+
+footer .awesome-container i {
+  font-size: 16px;
 }
 
 @media screen and (min-width: 800px) {
@@ -528,11 +541,6 @@ footer .awesome-container {
             justify-content: space-between;
     top: 274px;
   }
-  main .episodios .container-iframe div {
-    width: 584px;
-    height: 232px;
-    margin-bottom: 72px;
-  }
   main .de-donde-venimos {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -546,6 +554,10 @@ footer .awesome-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  main .de-donde-venimos a {
+    position: relative;
+    top: -300px;
   }
   main .de-donde-venimos img {
     padding-right: 24px;
@@ -648,6 +660,26 @@ footer .awesome-container {
   }
   footer .awesome-container i {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1315px) {
+  .episodios .container-iframe {
+    width: 90%;
+    margin: 0 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 274px;
+  }
+  .episodios .container-iframe div {
+    width: 584px;
+    height: 232px;
+    margin-bottom: 72px;
   }
 }
 /*# sourceMappingURL=style.css.map */

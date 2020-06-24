@@ -18,15 +18,15 @@
         <nav>
             <input type="checkbox" name="boton-nav" id="boton-nav" checked="checked">
             <label for="boton-nav">
-                <div id="top"></div>
-                <div id="middle"></div>
-                <div id="bottom"></div>
+                <span id="top"></span>
+                <span id="middle"></span>
+                <span id="bottom"></span>
             </label>
             <ul>
-                <li><a href="#">EPISODIOS</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">ENTREVISTAS</a></li>
-                <li><a href="#">TÓPICOS</a></li>
+                <li><a href="#episodios-link">EPISODIOS</a></li>
+                <li><a href="#nosotros-link">NOSOTROS</a></li>
+                <li><a href="#entrevistas-link">ENTREVISTAS</a></li>
+                <li><a href="#topicos-link">TÓPICOS</a></li>
             </ul>
         </nav>
     </header>
@@ -38,11 +38,12 @@
             <h1 class="after-underlined">pale blue dot<span class="dot">.</span></h1>
             <p class="p-cel">Un podcast que explora el mundo de la programación. Nuevos episodios todos los jueves cada 15 días.</p>
             <p class="p-pc">El portal de podcast que explora el mundo de la proframación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <button>CONOCÉ MÁS</button>
+            <button onclick="location.href='#nosotros-link'">CONOCÉ MÁS</button>
         </section>
 
         <!-- EPISODIOS -->
         <section class="episodios">
+            <a id="episodios-link"></a>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon class="svg-cel" fill="white" points="0,4 0,0 100,0"/>
                 <polygon class="svg-pc" fill="white" points="0,10 0,0 100,0"/>
@@ -52,14 +53,15 @@
             </svg>
             <h2>Episodios</h2>
             <div class="container-iframe">
-                <div><iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div><iframe src="https://open.spotify.com/embed-podcast/episode/4TVf9ldzZpa4LKTQecAqCy" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div><iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div><iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/4TVf9ldzZpa4LKTQecAqCy" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe></div>
+                <div><iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe></div>
             </div>
         </section>
         <!-- DE DONDE VENIMOS -->
         <section class="de-donde-venimos">
+            <a id="nosotros-link"></a>
             <img src="images/phone.png" alt="mock-up phone">
             <article>
                 <h2>De dónde venimos</h2>
@@ -70,19 +72,20 @@
         </section>
         <!-- INVITADOR ESTELARES-->
         <section class="invitados">
+            <a id="entrevistas-link"></a>
             <h2>Invitados/as Estelares</h2>
             <div class="img-container">
                 <img src="images/grace-hopper.png" alt="Grace Hopper">
                 <img src="images/Katie-Bouman.png" alt="Katier Bouman">
                 <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
-                <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A. Univac">
-                <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer Operators">
+                <img src="images/AnE.R.A.Univac1103computerinthe1950s.png" alt="E.R.A. Univac">
+                <img src="images/ComputeroperatorswithanEniac—theworld’sfirstprogrammablegeneral-purposecomputer.png" alt="Computer Operators">
                 <img src="images/susan-kare.png" alt="Susan Kare">
             </div>
         </section>
         <!-- ALGUNOS DE NUESTROS TEMAS -->
         <section class="algunos">
-
+            <a id="topicos-link"></a>
             <h2>Algunos de nuestros temas</h2>
             <div class="svg-container">
                 <div>
@@ -112,7 +115,7 @@
                 <polygon class="svg-pc" fill="white" points="0,25 0,0 100,0"/>
             </svg>
             <h2>¿Querés las últimas novedades?</h2>
-            <button>ESCUCHÁ LOS EPISODIOS</button>
+            <button onclick="location.href='#episodios-link'">ESCUCHÁ LOS EPISODIOS</button>
 
         </section>
 
