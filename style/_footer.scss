@@ -1,0 +1,22 @@
+    footer {
+        background-color: #fff;
+        position: relative;
+        top: 140px;
+        height: 120px;
+        p {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            color: #060A24;
+            line-height: 22px;
+            padding-top: 24px;
+            text-align: center;
+        }
+        .awesome-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 14%;
+            i {
+                //font-size: 19px;
+            }
+        }
+    }
